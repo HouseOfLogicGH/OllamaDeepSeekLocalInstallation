@@ -2,7 +2,7 @@
 
 ## Part 1
 
-Details as per (this YouTube video)[https://youtu.be/1VT9JJspNFQ]
+Details as per [this YouTube video](https://youtu.be/1VT9JJspNFQ)
 
 ### Ollama Installation
 
