@@ -1,6 +1,8 @@
 # Ollama / DeepSeek Local Installation
 
-## part 1
+## Part 1
+
+Details as per (this YouTube video)[https://youtu.be/1VT9JJspNFQ]
 
 ### Ollama Installation
 
@@ -9,7 +11,7 @@ Main installation command:
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-Fix the service binding to allow connection from non-localhost addresses, as per (https://github.com/ollama/ollama/blob/main/docs/faq.md#setting-environment-variables-on-linux)[https://github.com/ollama/ollama/blob/main/docs/faq.md#setting-environment-variables-on-linux]
+Fix the service binding to allow connection from non-localhost addresses, as per [https://github.com/ollama/ollama/blob/main/docs/faq.md#setting-environment-variables-on-linux](https://github.com/ollama/ollama/blob/main/docs/faq.md#setting-environment-variables-on-linux)
 
 ```
 systemctl edit ollama.service
@@ -34,7 +36,7 @@ To download the model, eg deepseek-r1:1.5b
 ollama pull deepseek-r1:1.5b
 ```
 
-To test the model using curl
+To test the model using curl (or send the body as a Post in Postman)
 
 ```
 curl http://localhost:11434/api/generate -d '{
@@ -46,12 +48,12 @@ curl http://localhost:11434/api/generate -d '{
 
 ### Ollama API pages
 
-(https://github.com/ollama/ollama/blob/main/docs/api.md)[https://github.com/ollama/ollama/blob/main/docs/api.md]
+[https://github.com/ollama/ollama/blob/main/docs/api.md](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
-## part 2
+## Part 2
 
 ### open webui
-(https://github.com/open-webui/open-webui)[https://github.com/open-webui/open-webui]
+[https://github.com/open-webui/open-webui](https://github.com/open-webui/open-webui)
 
 Check python version - should be at least 3.11
 ```
